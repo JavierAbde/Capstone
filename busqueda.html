@@ -1,0 +1,528 @@
+<link rel="stylesheet" href="busqueda.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bodega360</h1>
+      <button onclick="location.href='Inventario.html'">Ir al inventario</button>
+    </header>
+    <div class="contenido">
+      <h2>Product Locations</h2>
+      <input type="text" id="searchInput" placeholder="Search for products..">
+      <button onclick="searchTable()">Search</button>
+      <table class="product-table" id="productTable">
+        <thead>
+          <tr>
+            <th>Codigo</th>
+            <th>Descripcion</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Cod. Provisional</th>
+            <th>Cant. Rengo</th>
+            <th>Cant. Rozas</th>
+            <th>Ubicación</th>
+            <th>QR</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>2090520051949</td>
+            <td>(BLOQ)ASADERA C/TAPA 1.6 (USAR2022395201044)</td>
+            <td>MARINEX</td>
+            <td></td>
+            <td>0</td>
+            <td>0</td>
+            <td>0</td>
+            <td>A1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030897048548</td>
+            <td>3 PLATOS CUADRADOS CON PEDESTAL ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>25155007 6129</td>
+            <td>0</td>
+            <td>0</td>
+            <td>A2</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030324752840</td>
+            <td>3 SET BANDEJA 29 CM (PLATOS) REDONDOS ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>25155002 6122</td>
+            <td>0</td>
+            <td>0</td>
+            <td>A3</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030895848010</td>
+            <td>ABRELATAS SWEET COOK</td>
+            <td>SWEET COOK</td>
+            <td>SWEET COOK</td>
+            <td>25046049</td>
+            <td>1</td>
+            <td>0</td>
+            <td>B1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2077293311043</td>
+            <td>ACUARIO 12 CM DECO ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>BW015WJ</td>
+            <td>25011242</td>
+            <td>0</td>
+            <td>0</td>
+            <td>B2</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2077293311050</td>
+            <td>ACUARIO 15 CM DECO ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>25011243</td>
+            <td>0</td>
+            <td>0</td>
+            <td>B3</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030221013815</td>
+            <td>ACUARIO 20 CM DECO ALLEGRA</td>
+            <td>VARIOS</td>
+            <td>BV783</td>
+            <td>25011244 BV783-22.5</td>
+            <td>0</td>
+            <td>0</td>
+            <td>C1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2077293311067</td>
+            <td>ACUARIO 8 CM DECCO ALLEGRA</td>
+            <td>ALLEGRA</td>
+            <td>BV786</td>
+            <td>25011241</td>
+            <td>0</td>
+            <td>0</td>
+            <td>C2</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030260785506</td>
+            <td>ALCUZA 200 ML COLOR MODERNA</td>
+            <td>VARIOS</td>
+            <td>COLOR</td>
+            <td>25080302</td>
+            <td>0</td>
+            <td>0</td>
+            <td>C3</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030876381819</td>
+            <td>ALCUZA 200 ML TRANSPARENTE MILANO</td>
+            <td>VARIOS</td>
+            <td>MILANO</td>
+            <td>25080303</td>
+            <td>0</td>
+            <td>0</td>
+            <td>D1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030456269377</td>
+            <td>ALCUZA 200 ML TRANSPARENTE MODERNA</td>
+            <td>VARIOS</td>
+            <td>TRANSPARENTE</td>
+            <td>25080300 25080301</td>
+            <td>0</td>
+            <td>0</td>
+            <td>D2</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030791473637</td>
+            <td>ALCUZA COOPER 4 PZS ELEGANCE</td>
+            <td>VARIOS</td>
+            <td>25080012</td>
+            <td>25080012</td>
+            <td>4</td>
+            <td>0</td>
+            <td>D3</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030113775104</td>
+            <td>ALCUZA SILVER MODERN 4 PZS</td>
+            <td>VARIOS</td>
+            <td>25080014</td>
+            <td>25080014</td>
+            <td>0</td>
+            <td>0</td>
+            <td>E1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030900605928</td>
+            <td>ARROCERA 28 CM ALUMINIO FORJADO BOHLIER</td>
+            <td>BOHLIER</td>
+            <td>25046023</td>
+            <td>25046023</td>
+            <td>0</td>
+            <td>0</td>
+            <td>E2</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2030941547638</td>
+            <td>ARROCERA C/ASAS INOX 24 CM WENS</td>
+            <td>WENS</td>
+            <td>520-R24</td>
+            <td>25043629</td>
+            <td>0</td>
+            <td>0</td>
+            <td>E3</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2022590243504</td>
+            <td>ASADERA CUADRADA 1.1 LT MARINEX</td>
+            <td>MARINEX</td>
+            <td>749-6221</td>
+            <td>749-6221</td>
+            <td>0</td>
+            <td>0</td>
+            <td>F1</td>
+            <td><img src="ASADERA.png" alt="QR Code" style="width: 50px; height: 50px;"></td>
+          </tr>
+          <tr>
+            <td>2090520051802</td>
+            <td>ASADERA CUADRADA 24 CM 1.8 LT MARINEX</td>
+            <td>MARINEX</td>
+            <td>749-6222B</td>
+            <td>749-6222B 62014700</td>
+            <td>9</td>
+            <td>0</td>
+            <td>F2</td>
+            <td><img src="qr-code-17.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2090532288746</td>
+            <td>ASADERA CUADRADA C/TAPA 1.8 LTS MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6222.25-3</td>
+            <td>620247014 62092617</td>
+            <td>0</td>
+            <td>0</td>
+            <td>F3</td>
+            <td><img src="qr-code-18.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030927521409</td>
+            <td>ASADERA OVALADA 3.2 LT C/ASA MARINEX</td>
+            <td>MARINEX</td>
+            <td>62092606</td>
+            <td>62092606 66630200978421</td>
+            <td>0</td>
+            <td>0</td>
+            <td>G1</td>
+            <td><img src="qr-code-19.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030674163648</td>
+            <td>ASADERA OVALADA 4.2 LT C/ASA MARINEX</td>
+            <td>MARINEX</td>
+            <td>62092607</td>
+            <td>62092607 7891155043560</td>
+            <td>0</td>
+            <td>0</td>
+            <td>G2</td>
+            <td><img src="qr-code-20.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2077277214001</td>
+            <td>ASADERA RECTANGULAR 2.2 LT MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6534.01-9</td>
+            <td>62014703 749-6534</td>
+            <td>7</td>
+            <td>0</td>
+            <td>G3</td>
+            <td><img src="qr-code-21.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030463589215</td>
+            <td>ASADERA RECTANGULAR 2.7 LT MARINEX</td>
+            <td>MARINEX</td>
+            <td>ORIGINAL</td>
+            <td>62092604 163646 65350200962496</td>
+            <td>3</td>
+            <td>0</td>
+            <td>H1</td>
+            <td><img src="qr-code-22.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030793119472</td>
+            <td>ASADERA RECTANGULAR 3.5 LT MARINEX</td>
+            <td>MARINEX</td>
+            <td>ORIGINAL</td>
+            <td>65390200962509 62092605 163646</td>
+            <td>5</td>
+            <td>0</td>
+            <td>H2</td>
+            <td><img src="qr-code-23.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2022395201044</td>
+            <td>ASADERA RECTANGULAR 30 X 18 CM C/TAPA MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6532.25-4</td>
+            <td>62092614 GD16532254</td>
+            <td>0</td>
+            <td>0</td>
+            <td>H3</td>
+            <td><img src="qr-code-24.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030957471118</td>
+            <td>ASADERA RECTANGULAR 5LT (40.4X24X7) C/TAPA</td>
+            <td>MARINEX</td>
+            <td>6538.26-5N</td>
+            <td>62092721 6538</td>
+            <td>0</td>
+            <td>0</td>
+            <td>I1</td>
+            <td><img src="qr-code-25.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030330053252</td>
+            <td>ASADERA RECTANGULAR 5LT (40.4X24X7) MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6538.41-4N</td>
+            <td>62014708 S-653801565-02 749-65</td>
+            <td>1</td>
+            <td>0</td>
+            <td>I2</td>
+            <td><img src="qr-code-26.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2090520051925</td>
+            <td>ASADERA RECTANGULAR C/TAPA 2.2 LTS MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6534.251N</td>
+            <td>749-16534251 62092615</td>
+            <td>0</td>
+            <td>0</td>
+            <td>I3</td>
+            <td><img src="qr-code-27.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030673060450</td>
+            <td>ASADERA RECTANGULAR C/TAPA 2.9 LTS MARINEX</td>
+            <td>MARINEX</td>
+            <td>62092652</td>
+            <td>62092616 62092652</td>
+            <td>0</td>
+            <td>0</td>
+            <td>J1</td>
+            <td><img src="qr-code-28.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2077277214506</td>
+            <td>ASADERA RECTANGULAR GRANDE 3000 ML MARINEX</td>
+            <td>MARINEX</td>
+            <td>GD1.6536.41-7</td>
+            <td>62014704 749-6536</td>
+            <td>22</td>
+            <td>1</td>
+            <td>J2</td>
+            <td><img src="qr-code-29.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030502787404</td>
+            <td>CUCHILLO CARNICERO 15 CM ROJO 2915 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2915</td>
+            <td>AR291522</td>
+            <td>15</td>
+            <td>0</td>
+            <td>J3</td>
+            <td><img src="qr-code-30.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2077545221502</td>
+            <td>CUCHILLO CARNICERO 17,5 CM 2830 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2830</td>
+            <td>2830 AR283004</td>
+            <td>14</td>
+            <td>0</td>
+            <td>K1</td>
+            <td><img src="qr-code-31.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2090638811831</td>
+            <td>CUCHILLO CARNICERO 18 CM 2916 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2916</td>
+            <td>AR291600</td>
+            <td>18</td>
+            <td>0</td>
+            <td>K2</td>
+            <td><img src="qr-code-32.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2090203314804</td>
+            <td>CUCHILLO CARNICERO 20 CM #2831 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2831</td>
+            <td>AR283104</td>
+            <td>15</td>
+            <td>0</td>
+            <td>K3</td>
+            <td><img src="qr-code-33.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2077545222509</td>
+            <td>CUCHILLO CARNICERO 25 CM 2832 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2832</td>
+            <td>2832 AR283204</td>
+            <td>17</td>
+            <td>0</td>
+            <td>L1</td>
+            <td><img src="qr-code-34.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030216579814</td>
+            <td>CUCHILLO CARNICERO 25 CM AZUL 2918 ARCOS</td>
+            <td>ARCOS</td>
+            <td>2918</td>
+            <td>AR291823</td>
+            <td>3</td>
+            <td>0</td>
+            <td>L2</td>
+            <td><img src="qr-code-35.png" alt="QR Code"></td>
+          </tr>
+          <tr>
+            <td>2030793236643</td>
+            <td>CUCHILLO CARNICERO 25 CM AZUL 2922</td>
+            <td>ARCOS</td>
+            <td>2922</td>
+            <td>AR292223</td>
+            <td>19</td>
+            <td>0</td>
+            <td>L3</td>
+            <td><img src="qr-code-36.png" alt="QR Code"></td>
+            <tr>
+              <td>2030203546928</td>
+              <td>FUENTE VIDRIO RECTANG C/TAPA 4.5 LT OCUISINE</td>
+              <td>OCUISINE</td>
+              <td>466AC00</td>
+              <td>466AC00</td>
+              <td>0</td>
+              <td>0</td>
+              <td>M1</td>
+              <td><img src="qr-code-37.png" alt="QR Code"></td>
+            </tr>
+            <tr>
+              <td>2030898754714</td>
+              <td>GRILL 26 CM CON TAPA ROICHEN</td>
+              <td>ROICHEN</td>
+              <td>RCRRC-26GO</td>
+              <td>RCRRC-26GO</td>
+              <td>0</td>
+              <td>0</td>
+              <td>M2</td>
+              <td><img src="qr-code-38.png" alt="QR Code"></td>
+              <tr>
+                <td>2030139422983</td>
+                <td>HIELERA STERLING LUMINARC</td>
+                <td>LUMINARC</td>
+                <td>STERLING</td>
+                <td>51G3084</td>
+                <td>0</td>
+                <td>0</td>
+                <td>M3</td>
+                <td><img src="qr-code-39.png" alt="QR Code"></td>
+              </tr>
+              <tr>
+                <td>2022240272106</td>
+                <td>JARRA C/TAPA 1.7 LT QUADRO LUMINARC</td>
+                <td>LUMINARC</td>
+                <td>QUADRO</td>
+                <td>51G2668</td>
+                <td>0</td>
+                <td>0</td>
+                <td>N1</td>
+                <td><img src="qr-code-40.png" alt="QR Code"></td>
+                <tr>
+                  <td>2066680423506</td>
+                  <td>JUEGO WOK 5 PZAS 35 CM DUSSEL</td>
+                  <td>DUSSEL</td>
+                  <td>VBM8</td>
+                  <td>YL32614-VBM8</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>N2</td>
+                  <td><img src="qr-code-41.png" alt="QR Code"></td>
+                </tr>
+                <tr>
+                  <td>2030938152531</td>
+                  <td>LECHERO ACERO INOX. NEGRO NIZA 600ML</td>
+                  <td>LUGANO</td>
+                  <td>NIZA</td>
+                  <td>LU727234</td>
+                  <td>9</td>
+                  <td>0</td>
+                  <td>N3</td>
+                  <td><img src="qr-code-42.png" alt="QR Code"></td>
+                </tr>
+                <tr>
+                  <td>2030175922164</td>
+                  <td>MAQUINA MOLER CARNE N 10 VICTORIA</td>
+                  <td>VICTORIA</td>
+                  <td>MU400005</td>
+                  <td>MU400005</td>
+                  <td>0</td>
+                  <td>0</td>
+                  <td>O1</td>
+                  <td><img src="qr-code-43.png" alt="QR Code"></td>
+                </tr>
+              </tr>
+            </tr>
+          </tr>
+        </tbody>
+    </table>
+  </div>
+</div>
+<script>
+  function searchTable() {
+    var input, filter, table, tr, td, i, j, txtValue;
+    input = document.getElementById("searchInput");
+    filter = input.value.toUpperCase();
+    table = document.getElementById("productTable");
+    tr = table.getElementsByTagName("tr");
+    for (i = 1; i < tr.length; i++) {
+      tr[i].style.display = "none";
+      td = tr[i].getElementsByTagName("td");
+      for (j = 0; j < td.length; j++) {
+        if (td[j]) {
+          txtValue = td[j].textContent || td[j].innerText;
+          if (txtValue.toUpperCase().indexOf(filter) > -1) {
+            tr[i].style.display = "";
+            break;
+          }
+        }
+      }
+    }
+  }
+</script>
+</body>
+</html>

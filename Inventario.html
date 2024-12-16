@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bodega360 - Inventario</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Bodega360</h1>
+    </header>
+    <nav>
+      <div class="izquierda">
+        <a href="/" id="home-link">Inicio</a>
+        <a href="/" id="inventory-link">Inventario</a>
+      </div>
+      <div class="derecha">
+        <select class="idioma" onchange="handleLanguageChange(event)">
+          <option value="es">Español</option>
+          <option value="en">Inglés</option>
+        </select>
+        <a href="signin.html" id="signin-link">Iniciar Sesión</a>
+        <a href="signup.html" id="signup">Registrarse</a>
+      </div>
+    </nav>
+    <div class="contenido">
+      <h2 id="inventory-heading">Inventario</h2>
+      <p id="inventory-description">Aquí puedes gestionar los productos disponibles en la bodega.</p>
+      <ul>
+        <li id="add-products">Agregar nuevos productos</li>
+        <li id="modify-products">Modificar la cantidad de productos en stock</li>
+        <li id="remove-products">Eliminar productos agotados</li>
+      </ul>
+      <div class="boton-container">
+        <a href="agregar.html">
+          <button class="boton" id="add-product-button">Agregar Producto</button>
+        </a>
+        <a href="busqueda.html">
+          <button class="boton" id="search-product-button">Buscar Producto</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    let language = 'es';
+
+    function handleLanguageChange(event) {
+      language = event.target.value;
+      document.getElementById('home-link').innerText = language === 'es' ? 'Inicio' : 'Home';
+      document.getElementById('inventory-link').innerText = language === 'es' ? 'Inventario' : 'Inventory';
+      document.getElementById('signin-link').innerText = language === 'es' ? 'Iniciar Sesión' : 'Sign In';
+      document.getElementById('signup').innerText = language === 'es' ? 'Registrarse' : 'Sign Up';
+      document.getElementById('inventory-heading').innerText = language === 'es' ? 'Inventario' : 'Inventory';
+      document.getElementById('inventory-description').innerText = language === 'es' ? 'Aquí puedes gestionar los productos disponibles en la bodega.' : 'Here you can manage the products available in the warehouse.';
+      document.getElementById('add-products').innerText = language === 'es' ? 'Agregar nuevos productos' : 'Add new products';
+      document.getElementById('modify-products').innerText = language === 'es' ? 'Modificar la cantidad de productos en stock' : 'Modify the quantity of products in stock';
+      document.getElementById('remove-products').innerText = language === 'es' ? 'Eliminar productos agotados' : 'Remove out-of-stock products';
+      document.getElementById('add-product-button').innerText = language === 'es' ? 'Agregar Producto' : 'Add Product';
+      document.getElementById('search-product-button').innerText = language === 'es' ? 'Buscar Producto' : 'Search Product';
+    }
+
+  
+  </script>
+</body>
+</html>
